@@ -22,11 +22,13 @@
                                     </small>
                                 </h5>
             </header>
+            <a href="tweet.php?id=<?= $row['id'] ?>">
             <div class="card-body">
                 <p class="card-text">
                    <?= $row['body'] ?>
                 </p>
             </div>
+            </a>
             <footer class="card-footer">
                 <a href="#" class="card-link">Likes</a>
             </footer>
