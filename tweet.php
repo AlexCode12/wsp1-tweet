@@ -9,6 +9,6 @@ $sth = $dbh->prepare('SELECT tweet.*, users.name FROM tweet
 $sth->bindParam(':tweetId', $tweetId);
 $sth->execute();
 $row = $sth->fetch(PDO::FETCH_ASSOC);
-$title = "Tweet from " . $row['name'];
+$title = "AMTV Tweet - Tweet from " . $row['name'];
 include 'views/tweet_layout.php';
 ?>
